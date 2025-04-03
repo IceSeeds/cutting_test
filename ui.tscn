@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://cl3j7rbsl133g"]
+
+[ext_resource type="Script" uid="uid://v3selif5k3pi" path="res://ui.gd" id="1_fyqef"]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_fyqef")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_right = 4.0
+offset_bottom = 27.0
+
+[node name="PercentageLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="WinScreen" type="Panel" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="WinLabel" type="Label" parent="WinScreen"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="RestartButton" type="Button" parent="WinScreen"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
